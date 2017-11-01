@@ -11,6 +11,12 @@
   align-items: center;
   color: #ffffff;
 }
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
 .title {
   margin: 16px;
   font-size: 32px;
