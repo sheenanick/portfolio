@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import profile from '../../img/sheena.jpeg';
 import './Header.css';
 
@@ -12,10 +13,7 @@ export default class Header extends Component {
             <h1>Front-End Engineer</h1>
             <h2>REACT | REDUX | ANDROID</h2>
           </div>
-          <div className='button-container'>
-            <button className='button'>ABOUT ME</button>
-            <button className='button'>VIEW MY WORK</button>
-          </div>
+          <Link to='/portfolio'><button className='button'>VIEW MY WORK</button></Link>
         </div>
       </div>
     );

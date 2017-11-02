@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
 import Header from './components/Header/Header';
+import Home from './routes/Home/Home';
+import Portfolio from './routes/Portfolio/Portfolio';
+import Contact from './routes/Contact/Contact';
 import './App.css';
 
 class App extends Component {
@@ -8,7 +12,9 @@ class App extends Component {
     return (
       <div className="App">
         <Nav />
-        <Header />
+        <Route exact path="/" component={Home}/>
+        <Route path="/portfolio" component={Portfolio}/>
+        <Route path="/contact" component={Contact}/>
       </div>
     );
   }
