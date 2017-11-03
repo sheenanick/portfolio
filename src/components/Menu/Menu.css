@@ -1,0 +1,33 @@
+.Menu {
+  height: 100vh;
+  width: 75%;
+  background-color: #000000;
+  color: #ffffff;
+}
+.Menu a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.Menu a:visited {
+  color: #ffffff;
+}
+.menu-title {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+.menu-item {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+.menu-item-icon {
+  height: 24px;
+  width: 24px;
+  margin: 0 16px;
+}
+.divider {
+  height: 1px;
+  background-color: #ffffff;
+}
