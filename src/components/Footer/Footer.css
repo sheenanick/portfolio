@@ -1,0 +1,23 @@
+.Footer {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  background: url("../../img/seigaiha.png");
+}
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-icon-container {
+  margin-right: 24px;
+}
+.footer-icon {
+  margin: 0 8px;
+}
+.copyright {
+  margin: 32px;
+  font-size: 14px;
+}
