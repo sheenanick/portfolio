@@ -19,7 +19,7 @@ export default class Menu extends Component {
           <Link to='/'>
             <div className='menu-item'>
               <img className='menu-item-icon' src={me} alt='About me icon' />
-              <h4>ABOUT ME</h4>
+              <h4>ABOUT</h4>
             </div>
           </Link>
           <div className='divider'/>

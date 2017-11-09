@@ -1,6 +1,62 @@
-.Contact {
+label {
+  font-size: 14px;
+}
+input, textarea {
+  box-sizing: border-box;
+}
+.form {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+}
+.form-item {
+  width: 100%;
+  padding: 18px 0;
+}
+.form-box, .error-box {
+  background-color: #FAFAFA;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: thin;
+}
+.error-box {
+  border-color: red;
+}
+.errorMessage {
+  font-size: 14px;
+  color: red;
+  margin: 4px 0;
+}
+.input {
+  width: 100%;
+  height: 42px;
+  margin-top: 6px;
+  padding: 4px;
+  font-size: 14px;
+}
+.name-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.name-field {
+  width: 49%;
+}
+.name {
+  width: 100%;
+  height: 42px;
+  margin-top: 6px;
+  padding: 4px;
+  font-size: 14px;
+}
+.text-area {
+  height: 150px;
+  width: 100%;
+  margin-top: 6px;
+  padding: 4px;
+  font-size: 14px;
+}
+.button-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #808080;
 }

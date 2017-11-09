@@ -1,0 +1,18 @@
+#About {
+  text-align: center;
+}
+.about-section {
+  height: 100%;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 880px) {
+  .about-me {
+    display: flex;
+  }
+  .about-section {
+    margin: 32px;
+  }
+}

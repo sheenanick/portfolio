@@ -1,14 +1,28 @@
+.app-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 16px 64px 16px;
+}
 .button {
   height: 48px;
+  min-width: 110px;
   padding: 16px;
   margin: 8px;
-  background-color: #ffffff;
   border-radius: 0;
-  border: #ffffff;
   font-size: 14px;
   font-weight: bold;
+  background-color: #ffffff;
+  border: solid 1px #ffffff;
+  color: #000000;
+}
+.button-border {
+  border: solid 1px #000000;
 }
 .button:hover {
   background-color: #000000;
+  border: #000000;
   color: #ffffff;
+  cursor: pointer;
 }
