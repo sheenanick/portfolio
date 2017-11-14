@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import github from '../../img/icons/github.png';
-import linkedin from '../../img/icons/linkedin.png';
+import github from '../../img/icons/github-icon.png';
+import linkedin from '../../img/icons/linkedin-icon.png';
 import './Footer.css';
 
 export default class Footer extends Component {

@@ -1,6 +1,6 @@
 #Home {
   height: 100vh;
-  background: url("../../img/main.jpg") 50% 35%/cover;
+  background: url("../../img/home/main.jpg") 50% 35%/cover;
 }
 .overlay {
   height: 100vh;

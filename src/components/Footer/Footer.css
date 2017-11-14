@@ -2,7 +2,8 @@
   height: 150px;
   display: flex;
   justify-content: center;
-  background: url("../../img/seigaiha.png");
+  background: #232323;
+  color: #ffffff;
 }
 .footer-container {
   width: 100%;
@@ -15,7 +16,11 @@
   margin-right: 8px;
 }
 .footer-icon {
+  width: 24px;
   margin: 0 8px;
+}
+.footer-icon:hover {
+  opacity: 0.5;
 }
 .copyright {
   margin: 32px 16px;

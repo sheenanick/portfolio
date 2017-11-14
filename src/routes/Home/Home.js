@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import profile from '../../img/sheena.jpeg';
+import profile from '../../img/home/sheena.jpeg';
 import './Home.css';
 
 export default class Home extends Component {

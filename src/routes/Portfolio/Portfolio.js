@@ -17,7 +17,7 @@ export default class Portfolio extends Component {
           <div className='column'>
             <a href='https://winter-wondoland.herokuapp.com/' target='_blank' rel='noopener noreferrer' className='proj-container'>
               <img className='proj-img' src={wedding} alt='Wedding Website' />
-              <h2 className='proj-title'>Winter Wonderland</h2>
+              <h2 className='proj-title'>Winter Wondoland</h2>
               <p className='description'>This is my wedding website. It features a countdown component on the home page, and also has a RSVP form which is hooked up to Firebase.</p>
               <p>JAVASCRIPT, REACT, REDUX, SASS, FIREBASE</p>
             </a>
