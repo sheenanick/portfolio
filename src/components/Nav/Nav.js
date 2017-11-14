@@ -17,7 +17,7 @@ export default class Nav extends Component {
               <h4 onClick={() => scrollTo('Home')}>SHEENA DO</h4>
             </div>
             <div className='navbar-items'>
-              <h4 onClick={() => scrollTo('About')}>ABOUT</h4>
+              <h4 onClick={() => scrollTo('Home')}>HOME</h4>
               <h4 onClick={() => scrollTo('Portfolio')}>PORTFOLIO</h4>
               <h4 onClick={() => scrollTo('Contact')}>CONTACT</h4>
             </div>

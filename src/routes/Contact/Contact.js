@@ -120,7 +120,7 @@ export default class Contact extends Component {
               <p className='errorMessage'>Message is required</p>
               : null
             }
-            <label>Message</label>
+            <label>Message*</label>
             <textarea className={messageError ? 'error-box text-area' : 'form-box text-area'} ref='message' name='message' type='text' value={message} onChange={this.handleChange} />
           </div>
           <div className='button-container'>
