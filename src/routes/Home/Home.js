@@ -9,7 +9,7 @@ export default class Home extends Component {
         <div className='overlay'>
           <div className='title'>
             <img className='profile-img' src={profile} alt='Sheena' />
-            <h1>Front-End Engineer</h1>
+            <h1>Front-End Developer</h1>
             <h2>REACT | REDUX | ANDROID</h2>
           </div>
         </div>
