@@ -7,6 +7,7 @@ import About from './routes/About/About';
 import Portfolio from './routes/Portfolio/Portfolio';
 import Contact from './routes/Contact/Contact';
 import { toggleMenu } from './actions/navActions';
+import { submitContact, resetContact } from './actions/contactActions';
 import './App.css';
 
 class App extends Component {
@@ -17,19 +18,15 @@ class App extends Component {
     }
   }
 
-  toggle = () => {
-    this.props.toggleMenu();
-  }
-
   render() {
-    const { showMenu } = this.props;
+    const { showMenu, toggleMenu, submitted, submitContact, resetContact } = this.props;
     return (
       <div className="App">
-        <Nav scrollTo={this.scrollTo} toggleMenu={this.toggle} showMenu={showMenu} />
+        <Nav scrollTo={this.scrollTo} toggleMenu={toggleMenu} showMenu={showMenu} />
         <Home />
         <About />
         <Portfolio />
-        <Contact />
+        <Contact submitted={submitted} submitContact={submitContact} resetContact={resetContact}/>
         <Footer />
       </div>
     );
@@ -39,12 +36,15 @@ class App extends Component {
 const mapStateToProps = (state) => {
   return {
     showMenu: state.navState.showMenu,
+    submitted: state.contactState.submitted
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
     toggleMenu: function() { dispatch(toggleMenu()); },
+    submitContact: function(contact) { dispatch(submitContact(contact)); },
+    resetContact: function() { dispatch(resetContact()); },
   }
 }
 

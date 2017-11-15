@@ -1,4 +1,4 @@
-import { ACTIONS } from '../util/constants';
+import { NAV_ACTIONS } from '../util/constants';
 
 const initialState = {
   showMenu: false,
@@ -6,7 +6,7 @@ const initialState = {
 
 function navReducer(state = initialState, action) {
   switch (action.type) {
-    case ACTIONS.TOGGLE_MENU:
+    case NAV_ACTIONS.TOGGLE_MENU:
       return Object.assign({}, state, {
         showMenu: !state.showMenu
       });

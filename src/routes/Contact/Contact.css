@@ -4,6 +4,12 @@ label {
 input, textarea {
   box-sizing: border-box;
 }
+.submitted-message {
+  text-align: center;
+}
+.submitted-title {
+  margin-bottom: 32px;
+}
 .form {
   width: 100%;
   max-width: 800px;
