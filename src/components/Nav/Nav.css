@@ -9,7 +9,7 @@
 .Nav h4 {
   margin: 0;
 }
-.Nav h4:hover {
+.Nav h4:hover, .menu-icon:hover {
   cursor: pointer;
 }
 .mobile-nav {
