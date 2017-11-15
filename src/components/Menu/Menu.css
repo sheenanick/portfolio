@@ -1,7 +1,6 @@
 .Menu {
-  height: 100vh;
-  width: 75%;
-  background-color: #000000;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
   color: #ffffff;
 }
 .Menu a {
@@ -11,23 +10,22 @@
 .Menu a:visited {
   color: #ffffff;
 }
-.menu-title {
-  height: 88px;
-  display: flex;
-  align-items: center;
-  padding-left: 16px;
-}
 .menu-item {
-  height: 62px;
+  height: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
 }
-.menu-item-icon {
-  height: 24px;
-  width: 24px;
-  margin: 0 16px;
+.show-item {
+  height: 62px;
 }
 .divider {
-  height: 1px;
+  height: 0;
   background-color: #ffffff;
+  transition: height 0.2s ease-out;
+}
+.show-divider {
+  height: 1px;
 }

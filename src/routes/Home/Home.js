@@ -12,7 +12,6 @@ export default class Home extends Component {
             <h1>Front-End Engineer</h1>
             <h2>REACT | REDUX | ANDROID</h2>
           </div>
-          <button className='button' onClick={() => this.props.scrollTo('Portfolio')}>VIEW MY WORK</button>
         </div>
       </div>
     );
