@@ -14,7 +14,7 @@ class App extends Component {
   scrollTo = (id) => {
     const element = document.getElementById(id);
     if (element != null) {
-      window.scrollTo(0, element.offsetTop);
+      element.scrollIntoView({behavior: 'smooth'});
     }
   }
 
