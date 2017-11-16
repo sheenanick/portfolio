@@ -18,9 +18,10 @@
 .footer-icon {
   width: 24px;
   margin: 0 8px;
+  opacity: 0.75;
 }
 .footer-icon:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 .copyright {
   margin: 32px 16px;
