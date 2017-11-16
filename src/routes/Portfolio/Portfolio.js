@@ -12,7 +12,6 @@ export default class Portfolio extends Component {
     return (
       <div id='Portfolio' className='app-section'>
         <h1>PERSONAL PROJECTS</h1>
-        <h3>A collection of my recent work.</h3>
         <div className='grid'>
           <div className='column'>
             <a href='https://winter-wondoland.herokuapp.com/' target='_blank' rel='noopener noreferrer' className='proj-container'>
@@ -42,7 +41,7 @@ export default class Portfolio extends Component {
             <a href='https://github.com/sheenanick/pdx-branch-android' target='_blank' rel='noopener noreferrer' className='proj-container'>
               <img className='proj-img' src={branch} alt='pdxBranch App' />
               <h2 className='proj-title'>pdxBranch App</h2>
-              <p className='description'>This is an Android app for pdxBranch - a faux networking site for developers in the Portland, Oregon area. Utlizing the Meetup API, 10 Meetup groups in the tech industry are listed on the "Groups" screen.</p>
+              <p className='description'>This is an Android app for pdxBranch - a networking site for developers in the Portland, Oregon area. Utlizing the Meetup API, users can search for Meetups.</p>
               <p>JAVA, ANDROID, FIREBASE</p>
             </a>
           </div>

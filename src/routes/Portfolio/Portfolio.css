@@ -23,6 +23,7 @@
 .proj-img {
   width: 100%;
   border-radius: 1%;
+  box-shadow: 0 4px 5px #b3b3b3;
 }
 @media only screen and (min-width: 780px) {
   .column {
