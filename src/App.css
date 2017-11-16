@@ -14,11 +14,11 @@
   font-size: 14px;
   font-weight: bold;
   background-color: #ffffff;
-  border: solid 1px #ffffff;
+  border: solid 2px #ffffff;
   color: #000000;
 }
 .button-border {
-  border: solid 1px #000000;
+  border: solid 2px #000000;
 }
 .button:hover {
   background-color: #000000;

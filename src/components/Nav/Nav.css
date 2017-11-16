@@ -9,8 +9,9 @@
 .Nav h4 {
   margin: 0;
 }
-.Nav h4:hover, .menu-icon:hover {
+.Nav h4:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 .mobile-nav {
   height: 62px;
@@ -21,6 +22,9 @@
   height: 24px;
   position: absolute;
   z-index: 1;
+}
+.menu-icon:hover {
+  cursor: pointer;
 }
 .center-vertical {
   display: flex;
