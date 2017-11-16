@@ -18,7 +18,7 @@ export default class Portfolio extends Component {
               <img className='proj-img' src={wedding} alt='Wedding Website' />
               <h2 className='proj-title'>Winter Wondoland</h2>
               <p className='description'>This is my wedding website. It features a countdown component on the home page, and also has a RSVP form which is hooked up to Firebase.</p>
-              <p>JAVASCRIPT, REACT, REDUX, SASS, FIREBASE</p>
+              <p className='technologies'>JAVASCRIPT, REACT, REDUX, SASS, FIREBASE</p>
             </a>
           </div>
           <div className='column'>
@@ -26,7 +26,7 @@ export default class Portfolio extends Component {
               <img className='proj-img' src={collage} alt='Life Collage' />
               <h2 className='proj-title'>Life Collage</h2>
               <p className='description'>Life Collage is a lifestyle photo app that allows users to take pictures and add them to a collage. Users can "pass" ownership of collages to another user via Bluetooth.</p>
-              <p>JAVA, ANDROID</p>
+              <p className='technologies'>JAVA, ANDROID</p>
             </a>
           </div>
           <div className='column'>
@@ -34,7 +34,7 @@ export default class Portfolio extends Component {
               <img className='proj-img' src={fitness} alt='Fitness App' />
               <h2 className='proj-title'>Fitness Tracker</h2>
               <p className='description'>With this app, users can log their exercises to keep track of their daily activity. The main screen is a calendar that highlights which days the user has exercised.</p>
-              <p>JAVA, ANDROID, FIREBASE</p>
+              <p className='technologies'>JAVA, ANDROID, FIREBASE</p>
             </a>
           </div>
           <div className='column'>
@@ -42,7 +42,7 @@ export default class Portfolio extends Component {
               <img className='proj-img' src={branch} alt='pdxBranch App' />
               <h2 className='proj-title'>pdxBranch App</h2>
               <p className='description'>This is an Android app for pdxBranch - a networking site for developers in the Portland, Oregon area. Utlizing the Meetup API, users can search for Meetups.</p>
-              <p>JAVA, ANDROID, FIREBASE</p>
+              <p className='technologies'>JAVA, ANDROID, FIREBASE</p>
             </a>
           </div>
           <div className='column'>
@@ -50,7 +50,7 @@ export default class Portfolio extends Component {
               <img className='proj-img' src={todo} alt='To-Do List App' />
               <h2 className='proj-title'>To-Do List</h2>
               <p className='description'>A simple to-do list app where users can add tasks to the list, and mark tasks as complete. Users can also drag and drop to reorder tasks on the list, and hide/show completed tasks.</p>
-              <p>JAVA, ANDROID</p>
+              <p className='technologies'>JAVA, ANDROID</p>
             </a>
           </div>
           <div className='column'>
@@ -58,7 +58,7 @@ export default class Portfolio extends Component {
               <img className='proj-img' src={message} alt='Message Board' />
               <h2 className='proj-title'>Message Board</h2>
               <p className='description'>A question and answer message board application where a user submits a question and other users can respond with answers. Users can also star their favorite questions, and vote up or down answers.</p>
-              <p>JAVASCRIPT, EMBER, NODE.JS, BOWER</p>
+              <p className='technologies'>JAVASCRIPT, EMBER, NODE.JS, BOWER</p>
             </a>
           </div>
         </div>
