@@ -27,11 +27,11 @@ input, textarea {
   border-width: thin;
 }
 .error-box {
-  border-color: red;
+  border-color: #ff4d4d;
 }
 .errorMessage {
   font-size: 14px;
-  color: red;
+  color: #ff4d4d;
   margin: 4px 0;
 }
 .input {
