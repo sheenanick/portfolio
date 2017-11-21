@@ -1,25 +1,48 @@
 import React, { Component } from 'react';
+import profile from '../../img/home/sheena.jpeg';
+import web from '../../img/icons/web.png';
+import mobile from '../../img/icons/mobile.png';
+import agile from '../../img/icons/agile.png';
 import './About.css';
 
 export default class About extends Component {
   render() {
     return (
       <div id='About' className='app-section'>
-        <h1>HELLO, MY NAME IS SHEENA.</h1>
-        <div className='about-me'>
-          <section className='about-section'>
-            <h2>About Me</h2>
+        <h1>ABOUT ME</h1>
+        <section className='about-section'>
+          <div>
+            <img className='profile-img' src={profile} alt='Sheena' />
+          </div>
+          <div className='about-description'>
             <p>
-              A Portland native, I love exploring the great outdoors - especially hiking, camping, and snowboarding. I received my B.A. in Business Administration with a focus in Marketing from the University of Washington in Seattle. I was also a member of the Japan track of the International Studies in Business Program. I grew up in a bilingual household, so I wanted to combine my language and business skills. After college, I moved to Japan where I lived for nearly 5 years working to help localize the sales and marketing strategies of global brands like Guinness and Smirnoff. I also worked as a Business Consultant for a short time before moving back to Portland in 2016, which is when I decided to make a big career change!
+              After graduating with a B.A. in Business Administration from the University of Washington, I moved to Tokyo where I worked for nearly 5 years localizing the sales and marketing strategies of global brands like Guinness and Smirnoff. I also worked as a Business Consultant on a major software project before moving back to Portland in 2016.
             </p>
-          </section>
-          <section className='about-section'>
-            <h2>Why Coding?</h2>
             <p>
-              Because technology is really cool! Working as a Consultant on a major software project in Japan had opened my eyes to a whole new world of programming and technology. Even before that as a marketer, technology played a key role in how we reached our consumers and how we learned more about them. Becoming a developer seemed like a natural progression for me where I could utilize my problem-solving experience and pursue my passion for technology. I started out my new career learning Android development, and then was hired as a Mobile Developer to work on a React Native project. From there I widened my skillset to include React as well. Check out the Projects tab to see some of my work.
+              Becoming a developer was a natural progression for me where I could utilize my <span className='accent'>problem-solving experience</span> and pursue my <span className='accent'>passion for technology</span>. I started my new career learning Android development, then was hired as a Mobile Developer to work on a React Native project. From there I widened my skillset to include React as well.
             </p>
-          </section>
-        </div>
+          </div>
+        </section>
+        <section className='skills-section'>
+          <h1 className='center skills-title'>SKILLS & EXPERTISE</h1>
+          <div className='row'>
+            <div className='col-3'>
+              <img className='skills-icon' src={web} alt='computer' />
+              <h4 className='skills-subtitle'>WEB</h4>
+              <p className='skills-description'>I am proficient in <span className='accent'>HTML5</span>, <span className='accent'>CSS3</span>, and <span className='accent'>React + Redux</span>. I also have worked with <span className='accent'>Angular2</span>, <span className='accent'>Ember</span>, and preprocessors like <span className='accent'>SASS</span>.</p>
+            </div>
+            <div className='col-3'>
+              <img className='skills-icon' src={mobile} alt='smartphone' />
+              <h4 className='skills-subtitle'>MOBILE</h4>
+              <p className='skills-description'>I have one <span className='accent'>Android (Java)</span> app in the Google Play Store, and also have experience with hybrid apps, such as <span className='accent'>React Native (JavaScript)</span>.</p>
+            </div>
+            <div className='col-3'>
+              <img className='skills-icon' src={agile} alt='people' />
+              <h4 className='skills-subtitle'>AGILE</h4>
+              <p className='skills-description'>I love working in teams and directly with clients. I've worked on projects following <span className='accent'>Agile</span> & <span className='accent'>Scrum</span> methodology using <span className='accent'>JIRA</span>, <span className='accent'>Bitbucket</span>, and <span className='accent'>Git</span>.</p>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }

@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <div className="App">
         <Nav scrollTo={this.scrollTo} toggleMenu={toggleMenu} showMenu={showMenu} />
-        <Home />
+        <Home scrollTo={this.scrollTo}/>
         <About />
         <Portfolio />
         <Contact submitted={submitted} submitContact={submitContact} resetContact={resetContact}/>

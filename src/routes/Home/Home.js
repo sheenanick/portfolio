@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import profile from '../../img/home/sheena.jpeg';
 import './Home.css';
 
 export default class Home extends Component {
@@ -8,10 +7,10 @@ export default class Home extends Component {
       <div id='Home'>
         <div className='overlay'>
           <div className='title'>
-            <img className='profile-img' src={profile} alt='Sheena' />
-            <h1>Front-End Developer</h1>
-            <h2>REACT | REDUX | ANDROID</h2>
+            <h1>HELLO, MY NAME IS <span className='home-name'>SHEENA DO</span>.</h1>
+            <h2>I'm a front-end developer.</h2>
           </div>
+          <button className='button button-transparent' onClick={() => this.props.scrollTo('About')}>LEARN MORE</button>
         </div>
       </div>
     );

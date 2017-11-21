@@ -1,19 +1,64 @@
 #About {
-  text-align: center;
+  text-align: left;
 }
 .about-section {
-  height: 100%;
-  margin-bottom: 32px;
+  max-width: 980px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #595959;
+}
+.profile-img {
+  width: 255px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+}
+.about-description {
+  max-width: 680px;
+  margin: 0;
+  color: #595959;
+}
+.skills-section {
+  max-width: 1125px;
+  margin: 64px 0;
+}
+.skills-icon {
+  width: 125px;
+  height: 125px;
+}
+.skills-title {
+  font-size: 32px;
+}
+.skills-subtitle {
+  margin: 12px 0 0 0;
+  font-size: 24px;
+  font-weight: 700;
   color: #333333;
 }
-@media only screen and (min-width: 880px) {
-  .about-me {
-    display: flex;
-  }
+.skills-description {
+  max-width: 400px;
+  color: #595959;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+}
+.col-3 {
+  margin: 24px;
+  text-align: center;
+}
+@media only screen and (min-width: 780px) {
   .about-section {
-    margin: 32px;
+    flex-direction: row;
+    margin-bottom: 64px;
+  }
+  .row {
+    flex-direction: row;
+  }
+  .profile-img {
+    margin: 0 64px 0 16px;
+  }
+  .col-3 {
+    width: 33.33%;
   }
 }

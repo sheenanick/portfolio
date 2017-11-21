@@ -18,18 +18,17 @@
   border-radius: 0;
   font-size: 14px;
   font-weight: bold;
-  background-color: #ffffff;
-  border: solid 2px #ffffff;
-  color: #000000;
 }
 .button-border {
   border: solid 2px #000000;
 }
 .button:hover {
-  background-color: #000000;
-  border: #000000;
-  color: #ffffff;
   cursor: pointer;
+}
+.button-border:hover {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  border-color: #ff4d4d;
 }
 .accent {
   color: #ff4d4d;
