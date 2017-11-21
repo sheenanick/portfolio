@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import Nav from './components/Nav/Nav';
+import ScrollButton from './components/ScrollButton/ScrollButton';
 import Footer from './components/Footer/Footer';
 import Home from './routes/Home/Home';
 import About from './routes/About/About';
@@ -27,6 +28,7 @@ class App extends Component {
         <About />
         <Portfolio />
         <Contact submitted={submitted} submitContact={submitContact} resetContact={resetContact}/>
+        <ScrollButton scrollTo={this.scrollTo}/>
         <Footer />
       </div>
     );

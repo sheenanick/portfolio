@@ -1,0 +1,13 @@
+.scroll-arrow {
+  height: 60px;
+  width: 60px;
+  background: #ff4d4d;
+  z-index: 20;
+  position: relative;
+  top: 30px;
+  border: none;
+  border-radius: 50%;
+}
+.scroll-arrow:hover {
+  cursor: pointer;
+}
