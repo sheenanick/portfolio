@@ -5,6 +5,11 @@
   align-items: center;
   padding: 72px 16px;
 }
+.app-section h1 {
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 64px;
+}
 .button {
   height: 48px;
   min-width: 110px;
@@ -25,4 +30,7 @@
   border: #000000;
   color: #ffffff;
   cursor: pointer;
+}
+.accent {
+  color: #ff4d4d;
 }

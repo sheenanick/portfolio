@@ -8,7 +8,7 @@ export default class Footer extends Component {
     return (
       <div className='Footer'>
         <div className='footer-container'>
-          <p className='copyright'>&copy; 2017 Sheena Do</p>
+          <p className='copyright'><span className='accent'>&copy;</span> 2017 Sheena Do</p>
           <div className='footer-icon-container'>
             <a href='https://github.com/sheenanick' target='_blank' rel='noopener noreferrer'>
               <img className='footer-icon' src={github} alt='github'/>

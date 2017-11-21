@@ -3,7 +3,7 @@
 }
 .grid {
   width: 100%;
-  max-width: 880px;
+  max-width: 980px;
   margin-top: 16px;
 }
 .column {
@@ -15,15 +15,13 @@
   align-items: center;
 }
 .proj-container {
-  padding: 16px 0;
-  max-width: 475px;
+  padding: 16px 0 64px 0;
+  max-width: 385px;
   text-decoration: none;
   color: #000000;
 }
 .proj-img {
   width: 100%;
-  border-radius: 1%;
-  box-shadow: 0 4px 5px #b3b3b3;
 }
 .proj-title {
   font-size: 28px;
@@ -31,6 +29,11 @@
 }
 .description {
   color: #595959;
+}
+.circle-icon {
+  height: 8px;
+  width: 8px;
+  margin-right: 8px;
 }
 .technologies {
   color: #595959;

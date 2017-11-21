@@ -100,7 +100,7 @@ export default class Contact extends Component {
                 <p className='errorMessage'>Valid Email Address is required</p>
                 : null
               }
-              <label>Email Address*</label>
+              <label>Email Address<span className='accent'>*</span></label>
               <input className={emailError ? 'input form-box error-box' : 'input form-box'} ref='emailError' name='email' type='email' value={email} onChange={this.handleChange} />
             </div>
             <div className='form-item'>
@@ -111,11 +111,11 @@ export default class Contact extends Component {
               }
               <div className='name-container'>
                 <div className='name-field'>
-                  <label>First Name*</label>
+                  <label>First Name<span className='accent'>*</span></label>
                   <input className={nameError ? 'name error-box' : 'name form-box'} ref='firstName' name='firstName' type='text' value={firstName} onChange={this.handleChange} />
                 </div>
                 <div className='name-field'>
-                  <label>Last Name*</label>
+                  <label>Last Name<span className='accent'>*</span></label>
                   <input className={nameError ? 'name error-box' : 'name form-box'} ref='lastName' name='lastName' type='text' value={lastName} onChange={this.handleChange} />
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default class Contact extends Component {
                 <p className='errorMessage'>Message is required</p>
                 : null
               }
-              <label>Message*</label>
+              <label>Message<span className='accent'>*</span></label>
               <textarea className={messageError ? 'error-box text-area' : 'form-box text-area'} ref='message' name='message' type='text' value={message} onChange={this.handleChange} />
             </div>
             <div className='button-container'>
