@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import bar from '../../img/icons/bar.png';
 import './Contact.css';
 
 export default class Contact extends Component {
@@ -86,6 +87,7 @@ export default class Contact extends Component {
     return (
       <div id='Contact' className='app-section'>
         <h1>LET'S CONNECT</h1>
+        <img className='bar' src={bar} alt='bar' />
         {
           submitted ?
           <div className='submitted-message'>
@@ -129,8 +131,8 @@ export default class Contact extends Component {
               <label>Message<span className='accent'>*</span></label>
               <textarea className={messageError ? 'error-box text-area' : 'form-box text-area'} ref='message' name='message' type='text' value={message} onChange={this.handleChange} />
             </div>
-            <div className='button-container'>
-              <button id='submit-button' className='button button-border' type='submit' value='submit'>SEND</button>
+            <div className='center'>
+              <button className='button button-border' type='submit' value='submit'>SEND</button>
             </div>
           </form>
         }

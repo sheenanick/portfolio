@@ -6,6 +6,7 @@ import branch from '../../img/portfolio/branch.png';
 import todo from '../../img/portfolio/todo.png';
 import message from '../../img/portfolio/message.png';
 import circle from '../../img/icons/circle.png';
+import bar from '../../img/icons/bar.png';
 import './Portfolio.css';
 
 export default class Portfolio extends Component {
@@ -13,6 +14,7 @@ export default class Portfolio extends Component {
     return (
       <div id='Portfolio' className='app-section'>
         <h1>PERSONAL PROJECTS</h1>
+        <img className='bar' src={bar} alt='bar' />
         <div className='grid'>
           <div className='column'>
             <a href='https://winter-wondoland.herokuapp.com/' target='_blank' rel='noopener noreferrer' className='proj-container'>

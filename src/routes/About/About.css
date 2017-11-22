@@ -1,12 +1,15 @@
 #About {
   text-align: left;
 }
-.about-section {
-  max-width: 980px;
+.section {
   display: flex;
   flex-direction: column;
+}
+.about-section {
+  max-width: 980px;
   align-items: center;
   color: #595959;
+  margin-bottom: 100px;
 }
 .profile-img {
   width: 255px;
@@ -20,7 +23,7 @@
 }
 .skills-section {
   max-width: 1125px;
-  margin: 64px 0;
+  margin-bottom: 64px;
 }
 .skills-icon {
   width: 125px;
@@ -39,20 +42,12 @@
   max-width: 400px;
   color: #595959;
 }
-.row {
-  display: flex;
-  flex-direction: column;
-}
 .col-3 {
   margin: 24px;
   text-align: center;
 }
 @media only screen and (min-width: 780px) {
-  .about-section {
-    flex-direction: row;
-    margin-bottom: 64px;
-  }
-  .row {
+  .section {
     flex-direction: row;
   }
   .profile-img {

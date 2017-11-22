@@ -8,6 +8,9 @@
 .app-section h1 {
   font-size: 38px;
   text-align: center;
+  margin-bottom: 16px;
+}
+.bar {
   margin-bottom: 64px;
 }
 .button {

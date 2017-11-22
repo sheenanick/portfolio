@@ -10,6 +10,8 @@ input, textarea {
 }
 .submitted-title {
   margin-bottom: 32px;
+  font-weight: 600;
+  color: #333333;
 }
 .form {
   width: 100%;
@@ -62,8 +64,4 @@ input, textarea {
   margin-top: 6px;
   padding: 4px;
   font-size: 14px;
-}
-.button-container {
-  display: flex;
-  justify-content: center;
 }
