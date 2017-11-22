@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import profile from '../../img/home/sheena.jpeg';
+import profile from '../../img/about/sheena.jpeg';
 import web from '../../img/icons/web.png';
 import mobile from '../../img/icons/mobile.png';
 import agile from '../../img/icons/agile.png';
