@@ -6,6 +6,10 @@ export const CONTACT_ACTIONS = {
   RESET: 'RESET'
 }
 export const MENU = {
+  HOME: {
+    id: 'Home',
+    label: 'home'
+  },
   ABOUT: {
     id: 'About',
     label: 'about'

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import Nav from './components/Nav/Nav';
+import Menu from './components/Menu/Menu';
 import ScrollButton from './components/ScrollButton/ScrollButton';
 import Footer from './components/Footer/Footer';
 import Home from './routes/Home/Home';
@@ -9,9 +10,40 @@ import Portfolio from './routes/Portfolio/Portfolio';
 import Contact from './routes/Contact/Contact';
 import { toggleMenu } from './actions/navActions';
 import { submitContact, resetContact } from './actions/contactActions';
+import { MENU } from './util/constants';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: 'Home'
+    };
+  }
+
+  componentDidMount() {
+    document.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    Object.keys(MENU).map((key) => {
+      const id = MENU[key]['id'];
+      const element = document.getElementById(id);
+      const rect = element.getBoundingClientRect();
+      const { y, height } = rect;
+      if (y < 10 && y > 0 - height) {
+        this.setState({active: id});
+        return true;
+      }
+      return false;
+    });
+
+  }
+
   scrollTo = (id) => {
     const element = document.getElementById(id);
     if (element != null) {
@@ -21,14 +53,16 @@ class App extends Component {
 
   render() {
     const { showMenu, toggleMenu, submitted, submitContact, resetContact } = this.props;
+    const { active } = this.state;
     return (
       <div className="App">
-        <Nav scrollTo={this.scrollTo} toggleMenu={toggleMenu} showMenu={showMenu} />
-        <Home scrollTo={this.scrollTo}/>
+        <Menu scrollTo={this.scrollTo} active={active} toggleMenu={toggleMenu} showMenu={showMenu} />
+        <Nav scrollTo={this.scrollTo} active={active} />
+        <Home scrollTo={this.scrollTo} />
         <About />
         <Portfolio />
-        <Contact submitted={submitted} submitContact={submitContact} resetContact={resetContact}/>
-        <ScrollButton scrollTo={this.scrollTo}/>
+        <Contact submitted={submitted} submitContact={submitContact} resetContact={resetContact} />
+        <ScrollButton scrollTo={this.scrollTo} />
         <Footer />
       </div>
     );

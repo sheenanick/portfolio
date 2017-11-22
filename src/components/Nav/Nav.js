@@ -1,35 +1,35 @@
 import React, { Component } from 'react';
-import Menu from '../Menu/Menu';
-import menuIcon from '../../img/icons/menu-button-white.png';
+import { MENU } from '../../util/constants';
 import './Nav.css';
 
 export default class Nav extends Component {
-  mobileHomeClick = () => {
-    this.props.scrollTo('Home');
-    if (this.props.showMenu) {
-      this.props.toggleMenu();
-    }
-  }
-  render() {
-    const { scrollTo, toggleMenu, showMenu } = this.props;
+  renderNavItems = () => {
+    const { active, scrollTo } = this.props;
     return (
-      <div className='Nav'>
-        <div className='mobile-nav center-vertical'>
-          <img className='menu-icon' src={menuIcon} alt='menu icon' onClick={toggleMenu} />
-          <h4 className='center' onClick={this.mobileHomeClick}>SHEENA DO</h4>
-        </div>
-        <Menu showMenu={showMenu} scrollTo={scrollTo} toggleMenu={toggleMenu} />
-        <div className='navbar'>
-          <div className='navbar-contents center-vertical'>
-            <div className='logo'>
-              <h4 onClick={() => scrollTo('Home')}>SHEENA DO</h4>
-            </div>
-            <div className='navbar-items'>
-              <h4 onClick={() => scrollTo('Home')}>HOME</h4>
-              <h4 onClick={() => scrollTo('About')}>ABOUT</h4>
-              <h4 onClick={() => scrollTo('Portfolio')}>PORTFOLIO</h4>
-              <h4 onClick={() => scrollTo('Contact')}>CONTACT</h4>
-            </div>
+      Object.keys(MENU).map((key) => {
+        const item = MENU[key];
+        const { id, label } = item;
+        return (
+          <h4 key={key}
+            className={`nav-title nav-item ${active === id ? 'accent' : ''}`}
+            onClick={() => scrollTo(id)}>
+            {label.toUpperCase()}
+          </h4>
+        );
+      })
+    );
+  }
+
+  render() {
+    const { scrollTo, active } = this.props;
+    return (
+      <div className={`Nav ${active !== 'Home' ? 'fixed-nav' : ''}`}>
+        <div className='nav-contents center-vertical'>
+          <div className='logo'>
+            <h4 className='nav-title' onClick={() => scrollTo('Home')}>SHEENA DO</h4>
+          </div>
+          <div className='nav-item-wrapper'>
+            {this.renderNavItems()}
           </div>
         </div>
       </div>

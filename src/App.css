@@ -35,6 +35,15 @@
   color: #ffffff;
   border-color: #ff4d4d;
 }
+.center-vertical {
+  display: flex;
+  align-items: center;
+}
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .accent {
   color: #ff4d4d;
 }
