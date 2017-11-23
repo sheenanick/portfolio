@@ -7,7 +7,5 @@
   top: 30px;
   border: none;
   border-radius: 50%;
-}
-.scroll-arrow:hover {
   cursor: pointer;
 }

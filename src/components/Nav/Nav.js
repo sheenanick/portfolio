@@ -11,7 +11,7 @@ export default class Nav extends Component {
         const { id, label } = item;
         return (
           <h4 key={key}
-            className={`nav-title nav-item ${active === id ? 'accent' : ''}`}
+            className={`nav-title nav-item ${active === id ? 'active' : ''}`}
             onClick={() => scrollTo(id)}>
             {label.toUpperCase()}
           </h4>
@@ -26,7 +26,7 @@ export default class Nav extends Component {
       <div className={`Nav ${active !== 'Home' ? 'fixed-nav' : ''}`}>
         <div className='nav-contents center-vertical'>
           <div className='logo'>
-            <h4 className='nav-title' onClick={() => scrollTo('Home')}>SHEENA DO</h4>
+            <h4 className='nav-logo' onClick={() => scrollTo('Home')}>SHEENA DO</h4>
           </div>
           <div className='nav-item-wrapper'>
             {this.renderNavItems()}

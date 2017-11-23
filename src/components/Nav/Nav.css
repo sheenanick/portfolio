@@ -7,13 +7,14 @@
   z-index: 100;
   position: absolute;
 }
-.nav-title {
+.nav-logo, .nav-title {
   margin: 0;
   font-weight: 400;
-}
-.nav-title:hover {
   cursor: pointer;
-  color: #ff4d4d;
+}
+.nav-title:hover, .active {
+  text-decoration: underline;
+  text-underline-position: under;
 }
 .fixed-nav {
   position: fixed;

@@ -13,12 +13,11 @@
   height: 24px;
   position: absolute;
   z-index: 1;
-}
-.menu-icon:hover {
   cursor: pointer;
 }
 .menu-title {
   font-weight: 400;
+  cursor: pointer;
 }
 .menu-item {
   height: 0;

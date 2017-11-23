@@ -21,14 +21,12 @@
   border-radius: 0;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
 }
 .button-border {
   border: solid 2px #000000;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-.button:hover {
-  cursor: pointer;
 }
 .button-border:hover {
   background-color: #ff4d4d;
