@@ -17,6 +17,9 @@
 .menu-icon:hover {
   cursor: pointer;
 }
+.menu-title {
+  font-weight: 400;
+}
 .menu-item {
   height: 0;
   margin: 0;

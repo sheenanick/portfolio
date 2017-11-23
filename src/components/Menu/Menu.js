@@ -41,7 +41,7 @@ export default class Menu extends Component {
       <div className='Menu'>
         <div className='mobile-nav center-vertical'>
           <img className='menu-icon' src={menuIcon} alt='menu icon' onClick={toggleMenu} />
-          <h4 className='nav-title center' onClick={this.onHomeClick}>SHEENA DO</h4>
+          <h4 className='menu-title center' onClick={this.onHomeClick}>SHEENA DO</h4>
         </div>
         <div className={`divider ${showMenu ? 'show-divider' : ''}`} />
         {this.renderMenuItems()}
