@@ -57,7 +57,7 @@ class App extends Component {
     return (
       <div className="App">
         <Menu scrollTo={this.scrollTo} active={active} toggleMenu={toggleMenu} showMenu={showMenu} />
-        <Nav scrollTo={this.scrollTo} active={active} />
+        <Nav scrollTo={this.scrollTo} active={active} toggleMenu={toggleMenu}/>
         <Home scrollTo={this.scrollTo} />
         <About />
         <Portfolio />

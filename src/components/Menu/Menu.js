@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import menuIcon from '../../img/icons/menu-button-white.png';
+import close from '../../img/icons/close.png';
 import { MENU } from '../../util/constants';
 import './Menu.css';
 
@@ -23,12 +23,11 @@ export default class Menu extends Component {
         const item = MENU[key];
         const { id, label } = item;
         return (
-          <div key={key}>
-            <h4 className={`menu-item ${showMenu ? 'show-item' : ''} ${active === id ? 'accent' : ''}`}
+          <div className={`menu-item-wrapper ${showMenu ? 'show-item' : ''}`} key={key}>
+            <h4 className={`menu-item ${active === id ? 'underline' : ''}`}
               onClick={() => this.selectMenu(id)}>
               {label.toUpperCase()}
             </h4>
-            <div className={`divider ${showMenu ? 'show-divider' : ''}`} />
           </div>
         );
       })
@@ -39,12 +38,15 @@ export default class Menu extends Component {
     const { showMenu, toggleMenu } = this.props;
     return (
       <div className='Menu'>
-        <div className='mobile-nav center-vertical'>
-          <img className='menu-icon' src={menuIcon} alt='menu icon' onClick={toggleMenu} />
-          <h4 className='menu-title center' onClick={this.onHomeClick}>SHEENA DO</h4>
+        {
+          showMenu ?
+            <img className='menu-icon' src={close} alt='close icon' onClick={toggleMenu} />
+          :
+            null
+        }
+        <div className={`mobile-menu ${showMenu ? 'show-menu' : ''}`}>
+          {this.renderMenuItems()}
         </div>
-        <div className={`divider ${showMenu ? 'show-divider' : ''}`} />
-        {this.renderMenuItems()}
       </div>
     );
   }

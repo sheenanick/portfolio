@@ -1,59 +1,55 @@
-.Menu {
-  width: 100%;
-  background: rgba(48, 48, 48, 0.7);
-  color: #ffffff;
-  position: fixed;
-}
-.mobile-nav {
-  height: 62px;
-  margin: 0 16px;
-}
 .menu-icon {
   width: 24px;
   height: 24px;
-  position: absolute;
-  z-index: 1;
+  padding: 6px;
+  margin: 16px;
+  z-index: 200;
+  position: fixed;
   cursor: pointer;
+  border: 1px solid #ffffff;
+  transition: all 0.2s ease-in;
 }
-.menu-title {
-  font-weight: 400;
-  cursor: pointer;
+.dark {
+  background: #ffffff;
+  border-color: #595959;
 }
-.menu-item {
+.mobile-menu {
   height: 0;
-  margin: 0;
-  font-weight: 400;
+  width: 100%;
+  background: #1a1a1a;
+  color: #ffffff;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  overflow: hidden;
-  -webkit-transition: height 0.2s ease-in-out;
-  transition: height 0.2s ease-in-out;
+  z-index: 100;
+  position: fixed;
+  transition: all 0.3s ease-in;
 }
-.menu-item:hover {
-  cursor: pointer;
-  color: #ff4d4d;
+.show-menu {
+  height: 100vh;
+}
+.menu-item-wrapper {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.3s 0.3s ease-in;
 }
 .show-item {
-  height: 62px;
+  height: 72px;
 }
-.divider {
-  height: 0;
-  background-color: #ffffff;
-  -webkit-transition: height 0.2s ease-in-out;
-  transition: height 0.2s ease-in-out;
+.menu-item {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
 }
-.show-divider {
-  height: 1px;
+.menu-item:hover, .underline {
+  text-decoration: underline;
+  text-underline-position: under;
 }
+
 @media only screen and (min-width: 768px) {
   .Menu {
     display: none;
-  }
-  .show-item {
-    height: 0;
-  }
-  .divider {
-    height: 0;
   }
 }
