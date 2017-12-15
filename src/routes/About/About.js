@@ -3,7 +3,7 @@ import profile from '../../img/about/sheena.jpeg';
 import web from '../../img/icons/web.png';
 import mobile from '../../img/icons/mobile.png';
 import agile from '../../img/icons/agile.png';
-import bar from '../../img/icons/bar.png';
+import Bar from '../../components/Shapes/Bar';
 import './About.css';
 
 export default class About extends Component {
@@ -11,7 +11,7 @@ export default class About extends Component {
     return (
       <div id='About' className='app-section'>
         <h1>ABOUT ME</h1>
-        <img className='bar' src={bar} alt='bar' />
+        <Bar />
         <section className='section about-section'>
           <div>
             <img className='profile-img' src={profile} alt='Sheena' />
@@ -26,7 +26,7 @@ export default class About extends Component {
           </div>
         </section>
         <h1 className='center skills-title'>SKILLS & EXPERTISE</h1>
-        <img className='bar' src={bar} alt='bar' />
+        <Bar />
         <section className='section skills-section'>
           <div className='col-3'>
             <img className='skills-icon' src={web} alt='computer' />

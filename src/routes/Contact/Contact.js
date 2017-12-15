@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import bar from '../../img/icons/bar.png';
+import Bar from '../../components/Shapes/Bar';
 import './Contact.css';
 
 export default class Contact extends Component {
@@ -87,7 +87,7 @@ export default class Contact extends Component {
     return (
       <div id='Contact' className='app-section'>
         <h1>LET'S CONNECT</h1>
-        <img className='bar' src={bar} alt='bar' />
+        <Bar />
         {
           submitted ?
           <div className='submitted-message'>
