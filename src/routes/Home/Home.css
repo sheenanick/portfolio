@@ -37,11 +37,13 @@
 }
 .chevron {
   position: absolute;
-  bottom: 114px;
+  bottom: 13%;
+  outline: 1px solid transparent; /* Extend repaint dimensions to prevent trail of pixels left behind when animating */
   cursor: pointer;
-  transition: all 0.3s linear;
+  transition: all 0.2s ease-in-out;
 }
 .chevron:hover {
+  bottom: 12%;
 }
 .button-transparent {
   width: 150px;
@@ -85,7 +87,6 @@
   .chevron {
     width: 64px;
     height: 64px;
-    bottom: 64px;
   }
 }
 @media only screen and (min-width: 1000px) {
