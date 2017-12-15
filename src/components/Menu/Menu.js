@@ -40,7 +40,7 @@ export default class Menu extends Component {
       <div className='Menu'>
         {
           showMenu ?
-            <img className='menu-icon' src={close} alt='close icon' onClick={toggleMenu} />
+            <img className='menu-icon gradient' src={close} alt='close icon' onClick={toggleMenu} />
           :
             null
         }

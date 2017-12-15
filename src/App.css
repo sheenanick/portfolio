@@ -9,6 +9,7 @@
   font-size: 38px;
   text-align: center;
   margin-bottom: 16px;
+  color: #252429;
 }
 .bar {
   margin-bottom: 64px;
@@ -44,4 +45,8 @@
 }
 .accent {
   color: #ff4d4d;
+}
+.gradient:hover {
+  background: #ff4d4d;
+  background: linear-gradient(#ff4d4d, #ff4d79, #ff4da6);
 }

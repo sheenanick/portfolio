@@ -8,17 +8,17 @@
   position: absolute;
 }
 .nav-logo {
-  width: 36px;
+  width: 34px;
   margin-left: 16px;
   cursor: pointer;
 }
 .nav-title {
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
   cursor: pointer;
 }
 .nav-title:hover, .active {
-  text-decoration: underline;
+  text-decoration: underline #ff4d79;
   text-underline-position: under;
 }
 .fixed-nav {
@@ -30,9 +30,6 @@
 .nav-contents {
   width: 100%;
   max-width: 1200px;
-}
-.nav-item-wrapper {
-  width: 100%;
   display: flex;
   justify-content: flex-end;
 }
