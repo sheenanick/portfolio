@@ -2,6 +2,7 @@
   height: 60px;
   width: 60px;
   background: #ff4d4d;
+  background: linear-gradient(#ff4d4d, #ff4d79 65%, #ff4da6);
   z-index: 20;
   position: relative;
   top: 30px;

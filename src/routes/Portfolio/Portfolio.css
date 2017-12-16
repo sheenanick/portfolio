@@ -1,5 +1,5 @@
 #Portfolio {
-  background-color: #eeeeee;
+  background-color: #e5e4e7;
 }
 .grid {
   width: 100%;
@@ -25,18 +25,14 @@
 }
 .proj-title {
   font-size: 28px;
-  color: #333333;
+  font-weight: 600;
+  color: #323036;
 }
 .description {
-  color: #595959;
-}
-.circle-icon {
-  height: 8px;
-  width: 8px;
-  margin-right: 8px;
+  color: #64606c;
 }
 .technologies {
-  color: #595959;
+  color: #57545f;
   font-weight: 700;
 }
 @media only screen and (min-width: 780px) {

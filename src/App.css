@@ -1,3 +1,6 @@
+.App {
+  font-weight: 300;
+}
 .app-section {
   display: flex;
   flex-direction: column;
@@ -6,12 +9,12 @@
   padding: 72px 16px;
 }
 .app-section h1 {
-  font-size: 38px;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 3px;
   text-align: center;
   margin-bottom: 16px;
-}
-.bar {
-  margin-bottom: 64px;
+  color: #252429;
 }
 .button {
   height: 48px;
@@ -20,18 +23,19 @@
   margin: 8px;
   border-radius: 0;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
 }
 .button-border {
-  border: solid 2px #000000;
+  border: solid 1px #252429;
+  color: #252429;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .button-border:hover {
-  background-color: #ff4d4d;
+  font-weight: 300;
+  background-color: #252429;
   color: #ffffff;
-  border-color: #ff4d4d;
 }
 .center-vertical {
   display: flex;
@@ -43,5 +47,29 @@
   justify-content: center;
 }
 .accent {
-  color: #ff4d4d;
+  color: #ff4d79;
+}
+.gradient:hover {
+  background: #ff4d4d;
+  background: linear-gradient(#ff4d4d, #ff4d79, #ff4da6);
+}
+.fade-in {
+  animation: 500ms ease-in 1 fadeIn;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translate(0, -100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -10,7 +10,7 @@ import Portfolio from './routes/Portfolio/Portfolio';
 import Contact from './routes/Contact/Contact';
 import { toggleMenu } from './actions/navActions';
 import { submitContact, resetContact } from './actions/contactActions';
-import { MENU } from './util/constants';
+import { NAV } from './util/constants';
 import './App.css';
 
 class App extends Component {
@@ -30,18 +30,17 @@ class App extends Component {
   }
 
   handleScroll = () => {
-    Object.keys(MENU).map((key) => {
-      const id = MENU[key]['id'];
+    for (var i = 0; i < NAV.length; i++) {
+      const id = NAV[i]['id'];
       const element = document.getElementById(id);
       const rect = element.getBoundingClientRect();
       const { y, height } = rect;
-      if (y < 10 && y > 0 - height) {
+      if (y > 0 - height + 5) {
         this.setState({active: id});
         return true;
       }
-      return false;
-    });
-
+    }
+    return false;
   }
 
   scrollTo = (id) => {
@@ -57,7 +56,7 @@ class App extends Component {
     return (
       <div className="App">
         <Menu scrollTo={this.scrollTo} active={active} toggleMenu={toggleMenu} showMenu={showMenu} />
-        <Nav scrollTo={this.scrollTo} active={active} />
+        <Nav scrollTo={this.scrollTo} active={active} toggleMenu={toggleMenu}/>
         <Home scrollTo={this.scrollTo} />
         <About />
         <Portfolio />

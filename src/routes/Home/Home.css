@@ -4,36 +4,49 @@
 }
 .overlay {
   height: 100vh;
-  background-color: rgba(48, 48, 48, 0.7);
+  background-color: rgba(28, 26, 36, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #ffffff;
 }
-.title {
-  margin: 32px 16px;
-  text-align: center;
+.home-logo {
+  width: 45px;
 }
-.title h1 {
-  margin: 0;
-  font-size: 34px;
-  font-weight: 600;
+.circle {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: #ff4d4d;
+  background: linear-gradient(#ff4d4d, #ff4d79 65%, #ff4da6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.title h2 {
-  margin: 0;
-  font-size: 38px;
-  font-weight: 400;
+.home-title {
+  margin: 16px 0;
+  font-size: 58px;
+  font-weight: 300;
 }
-.home-name {
-  color: #ff4d4d;
-  font-size: 36px;
+.home-subtitle {
+  margin: 0 0 64px 0;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+.chevron {
+  position: absolute;
+  bottom: 12%;
+  outline: 1px solid transparent; /* Extend repaint dimensions to prevent trail of pixels left behind when animating */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.chevron:hover {
+  bottom: 10%;
 }
 .button-transparent {
   width: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: none;
   color: #ffffff;
   border: solid 2px #ffffff;
@@ -44,4 +57,43 @@
   width: 160px;
   background: #ff4d4d;
   border-color: #ff4d4d;
+}
+
+@media only screen and (min-width: 660px) {
+  .home-title {
+    font-size: 72px;
+  }
+  .home-subtitle {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .circle {
+    height: 110px;
+    width: 110px;
+  }
+  .home-logo {
+    width: 50px;
+  }
+  .home-title {
+    font-size: 80px;
+    letter-spacing: 2px;
+  }
+  .home-subtitle {
+    font-size: 24px;
+    letter-spacing: 7px;
+    word-spacing: 7px;
+  }
+  .chevron {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .home-title {
+    font-size: 95px;
+  }
+  .home-subtitle {
+    font-size: 28px;
+  }
 }
