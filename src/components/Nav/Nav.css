@@ -6,6 +6,7 @@
   color: #ffffff;
   z-index: 100;
   position: absolute;
+  animation: 0.7s ease-out 1 slideInFromTop;
 }
 .nav-logo {
   width: 34px;

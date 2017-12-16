@@ -1,11 +1,21 @@
+.Menu {
+  height: 0;
+  width: 100%;
+  background: #1a1a1a;
+  color: #ffffff;
+  z-index: 100;
+  position: fixed;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
 .menu-icon {
   width: 20px;
   height: 20px;
   padding: 12px;
   margin: 16px;
-  z-index: 200;
-  position: fixed;
   cursor: pointer;
+  z-index: 100;
+  position: absolute;
   border: 1px solid #ffffff;
   -moz-border-image: -moz-linear-gradient(#ff4d4d, #ff4d79, #ff4da6);
   -webkit-border-image: -webkit-linear-gradient(#ff4d4d, #ff4d79, #ff4da6);
@@ -18,16 +28,10 @@
   border-color: #595959;
 }
 .mobile-menu {
-  height: 0;
-  width: 100%;
-  background: #1a1a1a;
-  color: #ffffff;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 100;
-  position: fixed;
-  transition: all 0.3s ease-in;
 }
 .show-menu {
   height: 100vh;
@@ -43,7 +47,7 @@
 .menu-item {
   margin: 0;
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   cursor: pointer;
 }

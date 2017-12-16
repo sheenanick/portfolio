@@ -25,7 +25,7 @@ export default class About extends Component {
             </p>
           </div>
         </section>
-        <h1 className='center skills-title'>SKILLS & EXPERTISE</h1>
+        <h1 className='center'>SKILLS & EXPERTISE</h1>
         <Bar />
         <section className='section skills-section'>
           <div className='col-3'>

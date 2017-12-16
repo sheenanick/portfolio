@@ -1,6 +1,6 @@
 label {
   font-size: 14px;
-  color: #333333;
+  color: #252429;
 }
 input, textarea {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ input, textarea {
 .submitted-title {
   margin-bottom: 32px;
   font-weight: 600;
-  color: #333333;
+  color: #252429;
 }
 .form {
   width: 100%;
@@ -22,11 +22,9 @@ input, textarea {
   width: 100%;
   padding: 18px 0;
 }
-.form-box, .error-box {
-  background-color: #FAFAFA;
-  border-style: solid;
-  border-color: #cccccc;
-  border-width: thin;
+.form-box {
+  background: #faf9fa;
+  border: 1px solid #cac9cf;
 }
 .error-box {
   border-color: #ff4d4d;

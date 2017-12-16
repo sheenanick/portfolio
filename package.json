@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://sheenanick.github.io/portfolio",
   "dependencies": {
+    "classnames": "^2.2.5",
     "firebase": "^4.3.0",
     "gh-pages": "^1.1.0",
     "react": "^16.1.1",

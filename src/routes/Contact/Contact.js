@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 import Bar from '../../components/Shapes/Bar';
 import './Contact.css';
 
@@ -84,6 +85,10 @@ export default class Contact extends Component {
   render() {
     const { emailError, email, nameError, firstName, lastName, message, messageError  } = this.state;
     const { submitted } = this.props;
+    const emailErrClass = classNames('input', 'form-box', { 'error-box': emailError });
+    const nameErrClass = classNames('name', 'form-box', { 'error-box': nameError });
+    const msgErrClass = classNames('text-area', 'form-box', { 'error-box': messageError });
+
     return (
       <div id='Contact' className='app-section'>
         <h1>LET'S CONNECT</h1>
@@ -103,7 +108,7 @@ export default class Contact extends Component {
                 : null
               }
               <label>Email Address<span className='accent'>*</span></label>
-              <input className={emailError ? 'input form-box error-box' : 'input form-box'} ref='emailError' name='email' type='email' value={email} onChange={this.handleChange} />
+              <input className={emailErrClass} ref='emailError' name='email' type='email' value={email} onChange={this.handleChange} />
             </div>
             <div className='form-item'>
               {
@@ -114,11 +119,11 @@ export default class Contact extends Component {
               <div className='name-container'>
                 <div className='name-field'>
                   <label>First Name<span className='accent'>*</span></label>
-                  <input className={nameError ? 'name error-box' : 'name form-box'} ref='firstName' name='firstName' type='text' value={firstName} onChange={this.handleChange} />
+                  <input className={nameErrClass} ref='firstName' name='firstName' type='text' value={firstName} onChange={this.handleChange} />
                 </div>
                 <div className='name-field'>
                   <label>Last Name<span className='accent'>*</span></label>
-                  <input className={nameError ? 'name error-box' : 'name form-box'} ref='lastName' name='lastName' type='text' value={lastName} onChange={this.handleChange} />
+                  <input className={nameErrClass} ref='lastName' name='lastName' type='text' value={lastName} onChange={this.handleChange} />
                 </div>
               </div>
             </div>
@@ -129,7 +134,7 @@ export default class Contact extends Component {
                 : null
               }
               <label>Message<span className='accent'>*</span></label>
-              <textarea className={messageError ? 'error-box text-area' : 'form-box text-area'} ref='message' name='message' type='text' value={message} onChange={this.handleChange} />
+              <textarea className={msgErrClass} ref='message' name='message' type='text' value={message} onChange={this.handleChange} />
             </div>
             <div className='center'>
               <button className='button button-border' type='submit' value='submit'>SEND</button>

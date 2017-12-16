@@ -7,12 +7,12 @@ export default class Home extends Component {
     return (
       <div id='Home'>
         <div className='overlay'>
-          <div className='circle'>
+          <div className='circle fade-in'>
             <img className='home-logo' src={logo} alt='logo' />
           </div>
-          <h1 className='home-title'>Sheena Do</h1>
-          <h4 className='home-subtitle'>FRONT-END DEVELOPER</h4>
-          <svg className='chevron' onClick={() => this.props.scrollTo('About')} x='0px' y='0px' viewBox='0 0 407.437 407.437' style={{enableBackgroundNew: '0 0 407.437 407.437'}} xmlSpace='preserve' width='48px' height='48px'>
+          <h1 className='home-title fade-in'>Sheena Do</h1>
+          <h4 className='home-subtitle fade-in'>FRONT-END DEVELOPER</h4>
+          <svg className='chevron fade-in' onClick={() => this.props.scrollTo('About')} x='0px' y='0px' viewBox='0 0 407.437 407.437' style={{enableBackgroundNew: '0 0 407.437 407.437'}} xmlSpace='preserve' width='48px' height='48px'>
             <defs>
               <linearGradient id='gradient1' x1='0%' y1='0%' x2='0%' y2='100%'>
                 <stop offset='0%' style={{stopColor: '#ff4d4d'}} />

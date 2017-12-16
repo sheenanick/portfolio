@@ -6,8 +6,9 @@
   padding: 72px 16px;
 }
 .app-section h1 {
-  font-size: 38px;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 3px;
   text-align: center;
   margin-bottom: 16px;
   color: #252429;
@@ -51,4 +52,45 @@
 .gradient:hover {
   background: #ff4d4d;
   background: linear-gradient(#ff4d4d, #ff4d79, #ff4da6);
+}
+.fade-in {
+  animation: 1s ease-in 1 fadeIn;
+}
+.slide-in-left {
+  animation: 1s ease-in 1 slideInFromLeft;
+}
+.slide-in-right {
+  animation: 1s ease-in 1 slideInFromRight;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translate(-200%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translate(200%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translate(0, -100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
