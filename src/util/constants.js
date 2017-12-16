@@ -23,3 +23,19 @@ export const MENU = {
     label: 'contact'
   },
 }
+export const NAV = [{
+  id: 'Home',
+  label: 'home'
+},
+{
+  id: 'About',
+  label: 'about'
+},
+{
+  id: 'Portfolio',
+  label: 'portfolio'
+},
+{
+  id: 'Contact',
+  label: 'contact'
+}]

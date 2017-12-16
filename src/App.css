@@ -1,3 +1,6 @@
+.App {
+  font-weight: 300;
+}
 .app-section {
   display: flex;
   flex-direction: column;
@@ -12,9 +15,6 @@
   text-align: center;
   margin-bottom: 16px;
   color: #252429;
-}
-.bar {
-  margin-bottom: 64px;
 }
 .button {
   height: 48px;
@@ -57,7 +57,7 @@
   animation: 1s ease-in 1 fadeIn;
 }
 .slide-in-left {
-  animation: 1s ease-in 1 slideInFromLeft;
+  animation: 0.7s ease-in 1 slideInFromLeft;
 }
 .slide-in-right {
   animation: 1s ease-in 1 slideInFromRight;

@@ -7,9 +7,7 @@ const initialState = {
 function navReducer(state = initialState, action) {
   switch (action.type) {
     case NAV_ACTIONS.TOGGLE_MENU:
-      return Object.assign({}, state, {
-        showMenu: !state.showMenu
-      });
+      return { ...state, showMenu: !state.showMenu };
     default:
       return state
   }
