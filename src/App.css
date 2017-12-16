@@ -54,30 +54,9 @@
   background: linear-gradient(#ff4d4d, #ff4d79, #ff4da6);
 }
 .fade-in {
-  animation: 1s ease-in 1 fadeIn;
+  animation: 500ms ease-in 1 fadeIn;
 }
-.slide-in-left {
-  animation: 0.7s ease-in 1 slideInFromLeft;
-}
-.slide-in-right {
-  animation: 1s ease-in 1 slideInFromRight;
-}
-@keyframes slideInFromLeft {
-  0% {
-    transform: translate(-200%, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-@keyframes slideInFromRight {
-  0% {
-    transform: translate(200%, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
+
 @keyframes slideInFromTop {
   0% {
     transform: translate(0, -100%);

@@ -31,7 +31,7 @@ export default class Nav extends Component {
     const navClass = classNames('navbar', { 'fixed-nav': !home });
     return (
       <div className='Nav'>
-        <div className='mobile-nav'>
+        <div className='mobile-nav fade-in'>
           <img className={iconClass} src={`${home ? menuWhite : menuDark}`} alt='menu icon' onClick={toggleMenu} />
         </div>
         <div className={navClass}>
